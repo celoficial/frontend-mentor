@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Outfit"; /* Name your font family */
+  src: url("../fonts/Outfit-VariableFont_wght.ttf"); /* Locate the .ttf file within your directory*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #d5e1ef;
+  font-family: "Outfit";
+  color: #1f314f;
+}
+
+.card-container {
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.qr-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h2 {
+  font-size: 1.375rem;
+  line-height: 120%;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 0.938rem;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
