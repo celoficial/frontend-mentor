@@ -1,0 +1,122 @@
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Figtree";
+  display: flex;
+  background-color: var(--yellow);
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  width: 384px;
+  padding: var(--spacing-200, 24px);
+  flex-direction: column;
+  gap: var(--spacing-200, 24px);
+  border-radius: 20px;
+  border: 1px solid var(--color-gray-950, #111);
+  background: var(--color-white, #fff);
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+@media (max-width: 469px) {
+  .card {
+    width: 327px;
+    margin: 24px;
+  }
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-150, 12px);
+  align-self: stretch;
+}
+
+.card-tag {
+  display: flex;
+  padding: var(--spacing-50) var(--spacing-150);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+  border-radius: var(--spacing-50);
+  background-color: var(--yellow);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.published {
+  color: var(--color-gray-950 #111);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.card-content h1 {
+  color: var(--color-gray-950, #111);
+  font-family: Figtree;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.card-content span {
+  align-self: stretch;
+  color: var(--color-gray-500, #6b6b6b);
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150, 12px);
+
+  color: var(--color-gray-950, #111);
+  font-family: Figtree;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 21px */
+}
+
+.card-author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
