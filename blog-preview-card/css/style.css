@@ -14,9 +14,12 @@ font-face {
   src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -85,7 +88,6 @@ body {
 
 .card-content h1 {
   color: var(--color-gray-950, #111);
-  font-family: Figtree;
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
@@ -95,7 +97,6 @@ body {
 .card-content span {
   align-self: stretch;
   color: var(--color-gray-500, #6b6b6b);
-  font-family: Figtree;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -108,7 +109,6 @@ body {
   gap: var(--spacing-150, 12px);
 
   color: var(--color-gray-950, #111);
-  font-family: Figtree;
   font-size: 14px;
   font-style: normal;
   font-weight: 800;
