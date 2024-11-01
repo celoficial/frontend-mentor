@@ -56,6 +56,20 @@ body {
   background-color: var(--grey-800);
 }
 
+@media (max-width: 768px) {
+  .card {
+    max-width: 465px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    padding: 24px;
+    flex: 1 0 0;
+    margin: 24px;
+  }
+}
+
 .card__image {
   width: 88px;
   height: 88px;
